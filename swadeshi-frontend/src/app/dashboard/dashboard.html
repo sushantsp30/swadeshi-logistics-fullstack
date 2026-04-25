@@ -1,0 +1,49 @@
+<div class="container">
+
+  <!-- Create Booking -->
+  <div class="card">
+    <h2>Create Booking</h2>
+
+    <input [(ngModel)]="pickupLocation" placeholder="Pickup Location">
+    <input [(ngModel)]="dropLocation" placeholder="Drop Location">
+    <input [(ngModel)]="goodsType" placeholder="Goods Type">
+    <input type="number" [(ngModel)]="weight" placeholder="Weight">
+
+    <button (click)="createBooking()">Book Transport</button>
+  </div>
+
+  <!-- Booking List -->
+  <div class="card">
+    <h3>All Bookings</h3>
+
+    <div *ngIf="bookings.length === 0">
+      No bookings available
+    </div>
+
+    <table *ngIf="bookings.length > 0" border="1" width="100%" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Pickup</th>
+          <th>Drop</th>
+          <th>Goods</th>
+          <th>Weight</th>
+          <th>Status</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let b of bookings">
+          <td>{{ b.pickupLocation }}</td>
+          <td>{{ b.dropLocation }}</td>
+          <td>{{ b.goodsType }}</td>
+          <td>{{ b.weight }} kg</td>
+          <td>{{ b.status }}</td>
+          <td>₹ {{ b.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
