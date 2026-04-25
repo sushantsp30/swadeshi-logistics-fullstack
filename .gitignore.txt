@@ -1,0 +1,14 @@
+# Angular
+swadeshi-frontend/node_modules/
+swadeshi-frontend/dist/
+
+# Spring Boot
+Transport_Backend/target/
+
+# IDE
+.vscode/
+.idea/
+.metadata/
+
+# Logs
+*.log

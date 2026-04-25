@@ -1,0 +1,39 @@
+package com.app.model;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "booking")
+public class Booking {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    private String pickupLocation;
+    private String dropLocation;
+    private String goodsType;
+    private double weight;
+    private String status;
+    private double price; // 👈 ADD THIS
+
+    public Long getId() { return id; }
+
+    public String getPickupLocation() { return pickupLocation; }
+    public void setPickupLocation(String pickupLocation) { this.pickupLocation = pickupLocation; }
+
+    public String getDropLocation() { return dropLocation; }
+    public void setDropLocation(String dropLocation) { this.dropLocation = dropLocation; }
+
+    public String getGoodsType() { return goodsType; }
+    public void setGoodsType(String goodsType) { this.goodsType = goodsType; }
+
+    public double getWeight() { return weight; }
+    public void setWeight(double weight) { this.weight = weight; }
+
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
+
+    public double getPrice() { return price; }
+    public void setPrice(double price) { this.price = price; }
+}

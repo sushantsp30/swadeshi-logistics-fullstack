@@ -393,3 +393,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.webjars:s
 2026-04-25 09:18:58,806 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\snpat\Downloads\Transport_Backend\Transport_Backend\src\test\resources
 2026-04-25 09:39:13,878 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@237c9d2e{STOPPING}[12.0.16,sto=0]
 2026-04-25 09:39:13,881 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@6b87d89a{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2026-04-25 10:11:46,729 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
