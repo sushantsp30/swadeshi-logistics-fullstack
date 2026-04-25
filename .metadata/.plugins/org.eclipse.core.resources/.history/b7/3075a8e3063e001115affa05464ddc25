@@ -1,0 +1,27 @@
+package com.rk.service;
+
+import java.util.List;
+
+import org.jspecify.annotations.Nullable;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.rk.model.User;
+import com.rk.repository.Userrepository;
+
+@Service
+public class UserService {
+	@Autowired
+	private Userrepository repo;
+
+	public @Nullable User addUser(User userRequest) {
+		// TODO Auto-generated method stub
+		return repo.save(userRequest);
+	}
+
+	public @Nullable List<User> getUsers() {
+		// TODO Auto-generated method stub
+		return repo.findAll();
+	}
+
+}
